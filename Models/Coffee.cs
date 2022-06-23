@@ -2,13 +2,6 @@
 
 public class Coffee
 {
-    public string Name { get; set; }
-    public string Id { get; set; }
-
-    public Coffee(string name, string id)
-    {
-        Name = name;
-        Id = id;
-    }
-    
+    public string? Name { get; set; }
+    public int Id { get; set; }
 }

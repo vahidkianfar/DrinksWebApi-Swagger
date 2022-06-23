@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using API_Interactive_Lab_1.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace API_Interactive_Lab_1.Controllers;
 
@@ -12,6 +13,13 @@ public class CoffeeController : ControllerBase
     public string GetLoveTheCoffee()
     {
         return "I like coffee!";
+    }
+
+    [HttpGet("{name}")]
+
+    public Coffee GetAvailableCoffees(string? name)
+    {
+        return new Coffee { Name = name ?? "latte" , Id = Random.Shared.Next(1,10)};
     }
 }
     

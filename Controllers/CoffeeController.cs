@@ -1,6 +1,16 @@
-﻿namespace API_Interactive_Lab_1.Controllers;
+﻿using Microsoft.AspNetCore.Mvc;
 
-public class CoffeeController
+namespace API_Interactive_Lab_1.Controllers;
+
+
+[ApiController]
+[Route("[controller]/lover")]
+public class CoffeeController : ControllerBase
 {
-    
+    [HttpGet]
+    public string Get()
+    {
+        return "I like coffee!";
+    }
 }
+    

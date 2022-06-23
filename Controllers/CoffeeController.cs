@@ -19,7 +19,7 @@ public class CoffeeController : ControllerBase
 
     public Coffee GetAvailableCoffees(string? name)
     {
-        return new Coffee { Name = name ?? "latte" , Id = Random.Shared.Next(1,10)};
+        return new Coffee { Name = name ?? "latte" , Id = name!= null ? Random.Shared.Next(1,10) : -1};
     }
 }
     

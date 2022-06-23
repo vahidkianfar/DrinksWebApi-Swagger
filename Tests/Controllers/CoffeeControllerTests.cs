@@ -38,11 +38,13 @@ public class CoffeeControllerTests
         var result = controller.GetAvailableCoffees(testName);
         
         Assert.AreEqual(myCoffee.Name, result.Name);
-        Assert.AreEqual(myCoffee.Id,result.Id);
         
         //Because of the randomness of the Id, we can't test it
-        // BUT I get the idea.
+        //BUT I get the idea.
         
-        //Assert.AreEqual(expectedId, result.Id);
+        Assert.AreEqual(myCoffee.Id,expectedId);
+        
+        
+        
     }
 }

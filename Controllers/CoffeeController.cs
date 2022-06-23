@@ -8,7 +8,7 @@ namespace API_Interactive_Lab_1.Controllers;
 public class CoffeeController : ControllerBase
 {
     
-    [HttpGet("/lover")]
+    [HttpGet("lover")]
     public string GetLoveTheCoffee()
     {
         return "I like coffee!";

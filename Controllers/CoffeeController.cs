@@ -4,11 +4,12 @@ namespace API_Interactive_Lab_1.Controllers;
 
 
 [ApiController]
-[Route("[controller]/lover")]
+[Route("[controller]")]
 public class CoffeeController : ControllerBase
 {
-    [HttpGet]
-    public string Get()
+    
+    [HttpGet("/lover")]
+    public string GetLoveTheCoffee()
     {
         return "I like coffee!";
     }

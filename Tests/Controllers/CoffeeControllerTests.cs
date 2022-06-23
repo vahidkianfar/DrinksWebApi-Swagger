@@ -10,7 +10,7 @@ public class CoffeeControllerTests
     {
         var expectedContent = "I like coffee!";
         var controller = new CoffeeController();
-        var result = controller.Get();
+        var result = controller.GetLoveTheCoffee();
         Assert.AreEqual(expectedContent, result);
     }
 }
